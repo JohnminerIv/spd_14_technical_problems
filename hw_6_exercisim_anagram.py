@@ -30,4 +30,6 @@ def anagram(word, ls):
     return [word for word in ls if create_hist(word) == comp_hist]
 
 
-print(anagram("listen", ["enlists", "google", "inlets", "banana"]))
+print(anagram("listen", ["enlits", "google", "inlets", "banana"]))
+
+print(anagram('', ['', 'what', 'thing', '']))
