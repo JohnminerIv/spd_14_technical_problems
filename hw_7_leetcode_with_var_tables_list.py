@@ -42,7 +42,6 @@ for (int i = 0; i < len; i++) {
 
 def remove_in_place(ls, val):
     def remove_next(ls, index, val):
-        print(ls)
         if index == len(ls):
             return len(ls)
         if ls[index] == val:
@@ -53,7 +52,9 @@ def remove_in_place(ls, val):
     return remove_next(ls, 0, val)
 
 
-print(remove_in_place([1, 1, 1, 2, 1, 3, 1, 1, 4, 5, 1, 6], 1))
+s = [1, 1, 1, 2, 1, 3, 1, 1, 4, 5, 1, 6]
+print(remove_in_place(s, 1))
+print(s)
 """
 var table
 
